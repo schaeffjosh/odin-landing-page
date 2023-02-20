@@ -2,16 +2,15 @@ body {
     padding: 0;
     margin: 0;
     font-family: Copperplate;
-    
 }
 
 .hero {
     background-color: #1f2937;
-    padding: 16px 80px;
 }
 
 .header, .hero-content {
     display: flex;
+    flex: 1;
     justify-content: space-around;
     align-items: center;
     color: #e5e7eb;
@@ -58,33 +57,48 @@ button {
     font-family: Copperplate;
 }
 
-.body-one, .body-two, .body-three, .illustration {
+.body-one {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex: 1;
+    padding: 0;
     align-items: center;
-    padding: 32px;
 }
 
 .illustrations {
     display: flex;
-    justify-content: center;
+    flex: 1;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    gap: 42px;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ill-img {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
+    max-width: 200px;
+    height: auto;
+    flex: 1;
     border: 4px solid;
     border-radius: 16px;
     border-color: #3882f6;
 }
 
 .body-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #e5e7eb;
-    
+    padding: 32px 0px;
+}
+
+.body-three {
+    padding: 32px 0px;
 }
 
 .ref {
@@ -96,9 +110,11 @@ button {
 
 .block {
     display: flex;
+    flex: 1;
     justify-content: space-around;
     align-items: center;
-    width: 1000px;
+    padding: 0px 100px;
+    gap: 100px;
     background-color: #3882f6;
     border-radius: 16px;
     color: #e5e7eb;
